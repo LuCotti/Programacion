@@ -1,0 +1,100 @@
+.contact-form__input {
+	color: red;
+}
+
+h1 {
+	color: blue;
+	font-size: 5em;
+	font-family: cursive;
+	line-height: 1;
+	font-weight: 300;
+	background-color: red;
+	display: inline-block;
+	padding: 50px 50px;
+	margin: 50px;
+	border-radius: 100px;
+	outline: 10px solid blue;
+	box-shadow: 20px 10px 50px 20px;
+	text-shadow: 30px 30px 30px white;
+	position: relative;
+	left: 50px;
+}
+
+h2 {
+	color: blue;
+	font-size: 5em;
+	font-family: cursive;
+	line-height: 1;
+	font-weight: 300;
+	background-color: red;
+	display: inline-block;
+	padding: 50px 50px;
+	margin: 0;
+	border-radius: 50%;
+	outline: 10px dashed blue;
+	box-shadow: 20px 10px 50px 20px;
+	text-shadow: 30px 30px 30px white;
+	position: relative;
+	top: 10px;
+	left: 50px;
+}
+
+.Primer-h2 {
+	margin: 50px auto;
+}
+
+.h2 {
+	color: blue;
+	font-size: 5em;
+	font-family: cursive;
+	line-height: 1;
+	font-weight: 300;
+	background-color: red;
+	display: inline-block;
+	padding: 50px 50px;
+	margin: 0;
+	border-radius: 50%;
+	outline: 10px double blue;
+	box-shadow: 20px 10px 50px 20px;
+	text-shadow: 30px 30px 30px white;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+h3 {
+	color: blue;
+	font-size: 5em;
+	font-family: cursive;
+	line-height: 1;
+	font-weight: 300;
+	background-color: red;
+	display: inline-block;
+	padding: 50px 50px;
+	margin: 0;
+	border-radius: 50%;
+	outline: 10px groove grey;
+	box-shadow: 20px 10px 50px 20px;
+	text-shadow: 30px 30px 30px white;
+	transform: rotate(90deg);
+	position: relative;
+	top: 100px;
+	left: 1000px;
+}
+
+input::placeholder {
+	color: grey;
+}
+
+div {
+	margin-top: 70px;
+}
+
+.contact-form__input {
+	transition: all .5s;
+}
+
+.contact-form__input:focus {
+	background-color: grey;
+	padding: 10px;
+}

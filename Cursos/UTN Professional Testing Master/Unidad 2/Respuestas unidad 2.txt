@@ -1,0 +1,46 @@
+1- Partición de equivalencia es un método de caja negra que sirve para establecer clases de equivalencia según las 
+condiciones impuestas por la especificación, que pueden ser válidas o no válidas. Luego se prueba cada clase con 
+casos de prueba.
+
+
+
+2- Similitudes: ambos son métodos de caja negra; ambos incluyen una condición de rango; 
+
+Diferencias: si bien la partición de equivalencia establece varias condiciones, el análisis de valor límite lo que 
+hace es profundizar sobre la condición de rango, funcionando como un complemento del primer método; la partición de 
+equivalencia establece 3 casos de prueba para la condición de rango, mientras que el análisis de valor límite 
+establece 4 debido a que se toma otro criterio;
+
+
+
+3- Los sistemas de tiempo real son más difíciles de probar que los tradicionales ya que los primeros se complejizan 
+debido a que pueden tener diferentes estados y pueden procesar interrupciones por parte del usuario. Esto hace que 
+el tester deba desarrollar casos de prueba para diferentes situaciones: 
+
+	• Prueba de tareas: detectan errores de funcionamiento en cada tarea independiente.
+	• Prueba de comportamiento: detectan errores provenientes de los eventos.
+	• Prueba intertarea: detectan errores de sincronización entre tareas.
+	• Prueba de sistema: detectan errores al integrar el software con el hardware.
+
+
+
+4- El método de prueba de condición múltiple es más eficaz que el de ruta básica porque contempla todas las 
+posibilidades de las condiciones en el programa.
+
+
+
+5- Pseudocódigo para encender un aire acondicionado:
+
+	1. InicioAlgoritmo;
+	2. 	Escribir "Ingresar humedad [%Hr]", humedad;
+	3. 	Leer humedad;
+	4. 	Escribir "Ingresar temperatura [ºC]", temperatura;
+	5. 	Leer temperatura;
+	6. 	InicioSi;
+	7. 		Si humedad => 78 Y temperatura >= 27 entonces
+	8. 		Prender aire acondicionado;
+	9. 	FinSi;
+	10. FinAlgoritmo;
+
+En este caso con el método de ruta básica no detectaríamos que la temperatura puede ser por ejemplo de 47 ºC y 
+aún así no encenderíamos el aire acondicionado por un error en el valor mínimo de la humedad.

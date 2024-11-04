@@ -1,0 +1,9 @@
+CLASE UNIDAD Nº2
+
+¿Por qué no es necesario probar clases válidas con más de un caso?
+¿Qué pasa si probamos 10 clases válidas con 1 solo caso y nos tira un
+error? es verdad pero ayuda a acercarse al error
+
+analista funcional con el cliente
+
+grupos o rango? 2 o 3 posibilidades

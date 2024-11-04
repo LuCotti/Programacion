@@ -1,0 +1,70 @@
+1. Los errores de una webapp son mucho más diversos que en el software convencional por las siguientes razones: 
+	• Debido a que estos programas interactúan con distintos sistemas operativos, navegadores, hardware, 
+	protocolos de comunicaciones y aplicaciones backend.
+	• Se dificulta la localización de los errores debido a que a veces se lo encuentra del lado del cliente.
+	• Una webapp se encuentra en diferentes entornos, por lo que puede ser difícil recrear un error fuera de 
+	donde se lo encontró.
+	• Algunos errores se encuentran en un entorno operativo estático, mientras que otros se detectan en un 
+	Entorno operativo dinámico.
+
+
+
+2. En las pruebas a nivel componente pueden aplicarse pruebas de caja negra, y en algunos casos de caja blanca. Se 
+suelen utilizar los métodos anteriormente estudiados de partición de equivalencia, análisis de valor límite y 
+prueba de rutas.
+
+
+
+3. Errores obtenidos en los casos de prueba del ejercicio Nº2:
+
+	• EquivalenciaCaso4:
+	Acción realizada:
+	[Imagen]
+	Resultado esperado: "El monto debe ser un valor numérico"
+	Resultado obtenido: "La tasa ofrecida es 8%"
+
+	• EquivalenciaCaso5:
+	Acción realizada:
+	[Imagen]
+	Resultado esperado: "El monto debe ser un valor entero"
+	Resultado obtenido: "La tasa ofrecida es 4%"
+
+	• BVACaso4:
+	Acción realizada:
+	[Imagen]
+	Resultado esperado: "La tasa ofrecida es 6%"
+	Resultado obtenido: "La tasa ofrecida es 8%"
+
+	• BVACaso7:
+	Acción realizada:
+	[Imagen]
+	Resultado esperado: "El monto debe ser un valor numérico"
+	Resultado obtenido: "La tasa ofrecida es 8%"
+
+	• BVACaso8:
+	Acción realizada:
+	[Imagen]
+	Resultado esperado: "El monto debe ser un valor entero"
+	Resultado obtenido: "La tasa ofrecida es 4%"
+
+
+
+   Errores obtenidos en los casos de prueba del ejercicio Nº3:
+
+	• EquivalenciaCaso5:
+	Acción realizada:
+	[Imagen]
+	Resultado esperado: "El monto debe ser un valor entero"
+	Resultado obtenido: "La tasa ofrecida es 4%"
+
+	• BVACaso4:
+	Acción realizada:
+	[Imagen]
+	Resultado esperado: "La tasa ofrecida es 6%"
+	Resultado obtenido: "La tasa ofrecida es 8%"
+
+	• BVACaso8:
+	Acción realizada:
+	[Imagen]
+	Resultado esperado: "El monto debe ser un valor entero"
+	Resultado obtenido: "La tasa ofrecida es 4%"

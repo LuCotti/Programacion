@@ -1,0 +1,22 @@
+1. Las pruebas beta se pueden utilizar cuando el producto se encuentra "terminado" y se provee a algunos clientes. 
+Los mismos informan al desarrollador las fallas que encontraron y luego de solucionarlos se prepara el lanzamiento 
+del software a todos los clientes.
+
+2. Se puede automatizar la ejecución de casos de prueba, la identificación de errores, el registro de datos de un 
+programa.
+
+   No se puede automatizar en forma general la parte administrativa de las pruebas, como la planificación, gestión o 
+seguimiento. Si bien existen herramientas capaces de ayudar al tester con estas cuestiones, es imposible que todo 
+sea automatizado en su totalidad.
+
+3. Las ventajas principales de las metodologías TDD y XP son las siguientes:
+
+	• El programa, al ser probado antes de ser codeado, presentará menos errores y el proceso de testing se hará 
+	más simple.
+
+	• Ayuda a entender mejor la especificación.
+
+	• Se obtiene mayor confiabilidad en el código escrito.
+
+4. Las certificaciones en testing cobran importancia al haber mucha demanda y competencia en el mercado. Las empresas 
+buscan testers especializados y las certificaciones otorgan un respaldo importante.

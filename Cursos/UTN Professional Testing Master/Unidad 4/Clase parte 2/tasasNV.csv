@@ -1,0 +1,4 @@
+Caso,Monto,Alumno,ResultadoEsperado
+7,xyz,no,El monto debe ser un valor numérico
+8,18.50,no,El monto debe ser un valor entero
+9,0,no,El monto debe ser mayor a cero

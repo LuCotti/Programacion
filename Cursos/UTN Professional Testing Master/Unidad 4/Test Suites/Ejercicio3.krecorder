@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Ejercicio3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">EquivalenciaCaso1</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>500</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>id=resultado<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option></datalist></td><td>La tasa ofrecida es 4%</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">EquivalenciaCaso2</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>5000</td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>id=resultado<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 5%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option></datalist></td><td>La tasa ofrecida es 5%</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">EquivalenciaCaso3</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>20000</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>id=resultado<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 8%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option></datalist></td><td>La tasa ofrecida es 8%</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">EquivalenciaCaso4</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>kdj</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($):'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='© 2019 by David Lopez - Professional Testing Master - UTN FRBA'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertAlert</td><td>El monto debe ser un valor numérico<datalist><option>El monto debe ser un valor numérico</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">EquivalenciaCaso5</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>70.4</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertAlert</td><td>El monto debe ser un valor entero<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option><option>El monto debe ser un valor entero</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">EquivalenciaCaso6</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>0</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertAlert</td><td>El monto debe ser mayor a cero<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option><option>El monto debe ser mayor a cero</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">BVACaso1</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>1</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>id=resultado<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option></datalist></td><td>La tasa ofrecida es 4%</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">BVACaso2</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>999</td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>id=resultado<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option></datalist></td><td>La tasa ofrecida es 3%</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">BVACaso3</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>1000</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>id=resultado<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option></datalist></td><td>La tasa ofrecida es 6%</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">BVACaso4</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>10000</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>id=resultado<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option></datalist></td><td>La tasa ofrecida es 6%</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">BVACaso5</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>10001</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>id=resultado<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option></datalist></td><td>La tasa ofrecida es 8%</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">BVACaso6</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>98574</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>id=resultado<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option></datalist></td><td>La tasa ofrecida es 8%</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">BVACaso7</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>asdf</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertAlert</td><td>El monto debe ser un valor numérico<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option><option>El monto debe ser un valor numérico</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">BVACaso8</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>50.1</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertAlert</td><td>El monto debe ser un valor entero<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option><option>El monto debe ser un valor entero</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">BVACaso9</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://ingdlopez.evsis.com/testing/tasas_v2.html<datalist><option>http://ingdlopez.evsis.com/testing/tasas.html</option><option>http://ingdlopez.evsis.com/testing/tasas_v2.html</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=monto<datalist><option>id=monto</option><option>xpath=//input[@id='monto']</option><option>xpath=//input</option><option>css=#monto</option></datalist></td><td>0</td></tr>
+<tr><td>click</td><td>id=alumno<datalist><option>id=alumno</option><option>xpath=//input[@id='alumno']</option><option>xpath=//label/input</option><option>css=#alumno</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=calcular<datalist><option>id=calcular</option><option>xpath=//button[@id='calcular']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Monto ($)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Calcular']/parent::*</option><option>xpath=//button</option><option>css=#calcular</option></datalist></td><td></td></tr>
+<tr><td>assertAlert</td><td>El monto debe ser mayor a cero<datalist><option>id=resultado</option><option>xpath=//div[@id='resultado']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Calcular'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='David Lopez'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='La tasa ofrecida es 4%']/parent::*</option><option>xpath=//div/div</option><option>css=#resultado</option><option>El monto debe ser mayor a cero</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Unidad 2 - PDF</title>
+</head>
+<body onload="mueveReloj()">
+    <!-- VALIDAR ENTERO -->
+    <form name="form">
+        <input type="text" id="texto1">
+        <input type="button" value="Validar" onclick="validarEntero('texto1')">
+    <!-- COMPROBAR IGUALDAD -->
+        <input type="password" name="clave1">
+        <input type="password" name="clave2">
+        <input type="button" value="Comprobar" onclick="comprobarClave()">
+        <!-- INHIBIR INPUT -->
+        <input type="text" value="123" onfocus="this.blur()">
+        <!-- CONTAR CARACTERES -->
+        <textarea name="texto2"cols="30" rows="5" onkeydown="contar()"></textarea>
+        <input type="text" name="caracteres" onfocus="this.blur()">
+        <!-- RELOJ -->
+        <input type="text" name="reloj" size="10" onfocus="this.blur()">
+    </form>
+</body>
+</html>

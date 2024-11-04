@@ -1,0 +1,101 @@
+/* ESTILOS UNIVERSALES */
+
+@font-face {
+  font-family: 'lumanosimo';
+  src: url('./fuentes/Lumanosimo-Regular.ttf')
+  format('truetype')
+}
+
+html {
+  font-size: 10px;
+  font-family: 'lumanosimo';
+}
+
+body {
+  background: radial-gradient(#aaaaaa, #666666);
+  font-size: 2.5rem;
+}
+
+/* HEADER */
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  background-color: #777777;
+  border: 5px double #222222;
+}
+a {
+  text-decoration: none;
+  font-size: medium;
+  color: #0000cc;
+  font-size: 2.3rem;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 70%;
+}
+
+/* SECTIONS */
+
+h2 {
+  background-color: #9999ff;
+  border: 3px solid #7777ff;
+}
+
+section a {
+  display: block;
+  margin-bottom: 5%;
+}
+
+img {
+  width: 40%;
+  border-radius: 30%;
+  box-shadow: 3rem 1rem 20px #222222;
+}
+
+#miembros div {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#discografia div {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.flex {
+  border-bottom: 1px solid #000000;
+}
+
+@media (min-width: 768px) {
+  .flex {
+    display: flex;
+  }
+  .flex img {
+    width: 120%;
+    box-shadow: 1rem 3rem 20px #222222;
+  }
+  .flex h3 {
+    margin-left: 10%;
+  }
+  .gente {
+    flex-grow: 0.8;
+  }
+  .rob-foto {
+    width: 35%;
+  }
+}
+
+@media (min-width: 992px) {
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .flex img {
+    width: 130%;
+    box-shadow: 1rem 5rem 20px #222222;
+  }
+}

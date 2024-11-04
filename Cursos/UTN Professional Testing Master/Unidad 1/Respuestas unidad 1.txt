@@ -1,0 +1,45 @@
+CONSIGNAS:
+1. ¿Por qué es importante el testing de un proyecto de software?
+2. ¿Cuáles son las dificultades que se enfrentan al encarar el
+testing?
+3. ¿Qué diferencia hay entre integración ascendente y descendente?
+4. Con sus palabras, describa la diferencia entre verificación y
+validación.
+5. ¿Quién debe realizar la prueba de validación: el desarrollador o
+el usuario del software? Justifique su respuesta.
+
+
+
+RESPUESTAS:
+1. La importancia del testing en un proyecto de software se puede ver 
+en las consecuencias económicas que trae no realizarlo o 
+implementarlo de forma deficiente. Además, probar los distintos 
+errores que pueda tener un programa no es sencillo y lleva mucho 
+trabajo.
+
+2. Las dificultades que aparecen al momento de testear un programa 
+habitualmente se deben a la falta de personal, tiempo y/o recursos. 
+Además, no suele ser posible realizar pruebas exhaustivas debido a la 
+complejidad que conlleva y se deben establecer casos de prueba 
+razonables de forma que se maximice la cantidad de errores encontrados 
+para una limitada cantidad de recursos. También es necesario 
+establecer prioridades: en primer lugar se deben eliminar los riesgos 
+del negocio; como segunda prioridad, las pruebas se deben enfocar a 
+las funciones más importantes del programa.
+
+3. La diferencia entre integración ascendente y descendente radica en 
+la forma en que se van integrando los distintos componentes del 
+software: en la integración ascendente se empieza por los módulos de 
+bajo nivel, separándolos por grupos, y cuando se realizan las pruebas 
+necesarias se suplanta el driver por el siguiente módulo; en la 
+integración descendente se comienza por el módulo principal y se van 
+integrando los demás, ya sea en profundidad o en anchura.
+
+4. Verificación se refiere a que el software cumple con las funciones 
+para las que fue diseñado, mientras que validación evalúa si éste 
+cumple con los requerimientos del cliente.
+
+5. La prueba de validación la debe realizar el desarrollador basándose 
+en la especificación de requirimientos del software. El usuario en 
+ningún momento debería intervenir en esa prueba ya que se supone que 
+su única función es utilizar el programa tal como se encuentra.

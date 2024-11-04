@@ -1,0 +1,15 @@
+1. La clase es la unidad más pequeña que se puede probar en un sistema OO ya que todas las operaciones están sujetas                                                                                                           																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							F
+a una clase o a una instancia específica, por lo tanto no es posible probar cada módulo por separado.
+
+2. Aunque una clase ya haya sido probada, si se crean subclases, éstas también deben ser probadas ya que las 
+operaciones que se ejecutan se encuentran en un contexto diferente en cuanto a los atributos y operaciones que 
+dichas subclases manejan.
+
+3. Para realizar las pruebas es necesario realizar un análisis y diseño de casos de prueba según el contexto o 
+escenario para determinar qué operaciones probar para cada clase.
+
+4. Dentro del nivel de clase se pueden ejecutar pruebas de partición que pueden ser:
+	• En base al estado: separa casos de prueba según si la operación puede cambiar o no de estado.
+	• En base a los atributos: se ejecutan casos en base a los atributos que se utilizan.
+	• En base a la categoría: se organizan las pruebas según el tipo de función que cumple cada operación. Por 
+	ejemplo, pueden ser operaciones de inicialización, de cálculo, consultas o de terminación.

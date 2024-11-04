@@ -1,0 +1,201 @@
+*::selection {
+	color: red;
+	background: lightblue;
+}
+.Primer-párrafo {
+	color: blue;
+}
+.Primer-párrafo::first-line {
+	color: green;
+}
+.Primer-párrafo::first-letter {
+	font-size: 50px;
+}
+a {
+	color: red;
+	text-decoration: none;
+}
+#id-elemento {
+	color: gold;
+}
+[atributo="valor"] {
+	color: seagreen;
+}
+p strike {
+	color: red;
+}
+a:hover {
+	color: black;
+	font-size: 1.5em;
+}
+nav {
+	position: relative;
+	margin-bottom: 20px;
+	padding-bottom: 52px;
+	background: #ff0;
+	width: 100%;
+	z-index: 1;
+	transition-property: background;
+	transition-duration: 2s;
+}
+nav:active {
+	background: #00f;
+}
+body {
+	padding-bottom: 170px;
+}
+aside {
+	font-size: 50px;
+}
+nav h2 {
+	text-align: center;
+	animation-name: fumación;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	background-color: #44b;
+	letter-spacing: 60px;
+	/* INTENTO FALLIDO DE HACER QUE SE VOLTEEN LAS LETRAS DE "HOLA MUNDO" */
+	transition: letter-spacing 1s ease;
+}
+@keyframes fumación {
+	0% {
+		background-color: #44b;
+	}
+	25% {
+		background-color: #0f0;
+	}
+	50% {
+		background-color: #f00;
+	}
+	75% {
+		background-color: #f0f;
+	}
+	100% {
+		background-color: #0ff;
+	}
+}
+.nav__h4 {
+	margin-left: 46%;
+	transition-property: margin-left, font-weight;
+	transition-duration: 1s, 1s;
+}
+/* Los nth-child están desfasados y last-child no funciona sin razón aparente */
+.nav__h4:nth-child(2) {
+	transition-timing-function: linear;
+}
+.nav__h4:nth-child(3) {
+	transition-timing-function: ease;
+}
+.nav__h4:nth-child(4) {
+	transition-timing-function: ease-in;
+}
+.nav__h4:nth-child(5) {
+	transition-timing-function: ease-out;
+}
+.nav__h4:nth-child(6) {
+	transition-timing-function: ease-in-out;
+}
+.nav__h4:nth-child(7) {
+	transition-timing-function: step-start;
+}
+.nav__h4:nth-child(8) {
+	transition-timing-function: step-end;
+}
+.nav:hover > .nav__h4 {
+	margin-left: 0;
+	font-weight: 100;
+}
+.absolute {
+	position: absolute;
+	font-size: 50px;
+	margin-left: 35%;
+	margin-top: -200px;
+	opacity: 0;
+	transition: opacity 1s ease-in;
+}
+.nav:hover > .absolute {
+	opacity: 1;
+}
+.nav:hover > nav h2 {
+	letter-spacing: -60px;
+}
+nav a {
+	margin-left: 23%;
+}
+table {
+	width: 50%;
+	margin-left: 25%;
+}
+footer {
+	background: #0f0;
+	margin-bottom: 10px;
+	border: 4px solid blue;
+	position: fixed;
+	bottom: 0;
+	width: 90%;
+	text-align: center;
+	margin-left: 5%;
+	padding-bottom: 20px;
+	opacity: .5;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+footer:hover {
+	opacity: 1;
+}
+video {
+	margin-left: 41%;
+	cursor: wait;
+}
+.sticky {
+	background: #0f0;
+	position: sticky;
+	top: 0;
+	text-align: center;
+	transition-property: background;
+	transition-duration: 2s;
+	transition-delay: 1s;
+}
+.sticky:hover {
+	background: #f0f;
+}
+aside div {
+	overflow: auto;
+	background: lightcoral;
+	width: 900px;
+	height: 900px;
+	display: inline-block;
+	margin-left: 30px;
+}
+td {
+	text-align: center;
+}
+.Segundo-párrafo {
+	font-size: 30px;
+}
+.Segundo-párrafo::before {
+	content: "Esto no se puede seleccionar, ";
+}
+.Segundo-párrafo::after {
+	content: "pero esto no.";
+}
+.transform-container {
+	background-color: #44b;
+	padding: 20px;
+}
+.transform-item {
+	background-color: #f0f;
+	height: 150px;
+	width: 150px;
+	display: flex;
+	transition: transform 1s ease;
+}
+.transform-container:hover > .transform-item {
+	transform: translatex(1000px) rotate(-20deg) scale(1.5) skew(-90.3deg);
+}
+.transform-item b {
+	margin: auto;
+}

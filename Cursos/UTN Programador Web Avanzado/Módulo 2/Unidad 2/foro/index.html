@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Unidad 2 - Foro</title>
+</head>
+<body>
+    <form name="form">
+        Nombre: <input type="text" name="nombre">
+        Apellido: <input type="text" name="apellido">
+        Email: <input type="text" name="email">
+        Password: <input type="password" name="password1">
+        Repetir password: <input type="password" name="password2">
+        Teléfono: <input type="text" name="telefono" id="telefono">
+        <input type="button" value="Enviar" onclick="validarObligatorios()">
+        <input type="button" value="Enviar contraseñas" onclick="validarIgualdad()">
+        <input type="button" value="Enviar telefono" onclick="validarNumero('telefono')">
+    </form>
+</body>
+</html>

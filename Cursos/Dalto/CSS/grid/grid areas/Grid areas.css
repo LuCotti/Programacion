@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "aside main main"
+  "aside main main"
+  "aside main main"
+  "aside main main"
+  "footer footer footer";
+  grid-template-rows: repeat(auto-fill,1fr);
+  border: 5px solid #000;
+  height: 95vh;
+}
+.grid-item {
+  padding: 20px;
+}
+.header {
+  grid-area: header;
+  background-color: #aa0;
+}
+ul li {
+  display: inline-block;
+}
+.main {
+  grid-area: main;
+  background-color: #a0a;
+}
+.aside {
+  grid-area: aside;
+  background-color: #0aa;
+}
+.footer {
+  grid-area: footer;
+  background-color: #0a0;
+}
