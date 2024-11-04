@@ -1,0 +1,36 @@
+config.vm.hostname = "cambiar nombre desde vim"
+config.vm.define = "lo mismo"
+
+
+
+
+si se queda tildada la consola: Ctrl + C para cancelar
+
+vagrant destroy -f = para que no te pida confirmación
+
+
+
+VIM
+Esc + u = deshacer
+
+
+
+sudo fdisk -l
+
+
+Ctrl + E = ir al final de la linea
+
+trl + L = limpiar la pantalla
+
+
+
+Leer el github para guiarse en la práctica
+
+
+Examen:
+1 semana para hacerlo
+crear un repo con las carpetas y el script
+luego defender haciendo modificaciones
+
+
+

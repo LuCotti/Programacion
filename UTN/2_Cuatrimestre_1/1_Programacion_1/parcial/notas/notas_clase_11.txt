@@ -1,0 +1,8 @@
+"La recursividad siempre se puede reemplazar a través de ciclos..."
+Y yo acá rompiéndome la cabeza al reverendísimo pedo!
+
+Primero resolver el problema mentalmente, hacer un mapa mental y luego codear.
+
+3 horas para resolver el algoritmo de tipo parcial
+
+

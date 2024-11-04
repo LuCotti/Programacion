@@ -1,0 +1,122 @@
+Antes de vagrant up:
+config.vm.hostname = "VM_Cotti_Luciano" (en todos los que haya)
+
+config.vm.disk :disk, size: "10GB", name: "extra_storage"
+config.vm.disk :disk, size: "2GB", name: "extra_storage2"
+
+después vagrant up.
+
+
+
+Practicar partición para la defensa
+
+Secuencia: destruir vm, levantarla de nuevo, clonar repositorio, ejecutar script.
+
+
+
+si, un script es un .sh
+
+
+
+para eliminar cosas: rm -rf
+
+
+
+#! > shiban
+
+
+Primera línea del archivo script: #!/bin/bash
+
+
+
+$HOME/...		<-- usar esta
+/home/vagrant/...	<-- esta no
+
+
+./<nombre_del_archivo>		<<< para ejecutar el script
+
+
+
+para crear particiones: sudo fdisk /dev/sdc << EOF
+para formatear particiones: sudo mkfs.ext4 ${DISCO}5
+para formatear particiones: sudo mkfs.ext4 ${DISCO}6
+para montar particiones: sudo mount ${DISCO}5 /datos/pelis (comentado)
+para montar particiones: sudo mount ${DISCO}6 /datos/musica (comentado)
+para montar particiones: sudo echo "/dev/sdc5	/datos/pelis	ext4	defaults 0 0" | sudo tee -a /etc/fstab
+para montar particiones: sudo echo "/dev/sdc6	/datos/musica	ext4	defaults 0 0" | sudo tee -a /etc/fstab
+para desmontar: sudo umount /datos/pelis /datos/musica
+
+
+(el ${DISCO}5 por ej. haría referencia al sdc5)
+
+
+
+secuencia: hacer particiones, formatear y montar
+
+
+
+
+$<algo>		<-- variables
+
+
+
+sudo partprobe /dev/sdc		<-- para que se arregle la vm si se jode de tanto crear y eliminar particiones
+
+
+
+lsblk -f /dev/sdc	<-- para ver la estructura del disco
+
+
+
+sudo df -h: no se para que es pero muestra info de algo, para verificar si se montó.
+
+
+Hardcodear: codear a lo bruto
+Disney: principiante
+
+Ver onBoarding/Particionamiento_Standar
+
+
+si con sudo da permission denied usar tee
+tee: leer comando y ejecutarlo en lo que vaya después del |
+
+
+
+Para ejecutar un script, 2 opciones:
+1. ./<nombre_del_archivo>
+2. bash <nombre_del_archivo>
+
+
+
+Estudiar la teoría!!!!!!!!!
+
+
+
+para los usuarios:
+#!/bin/bash
+
+sudo su -c "whoami >> /otros/archivo" alu1
+sudo su -c "whoami >> /otros/archivo" alu2
+sudo su -c "whoami >> /otros/archivo" alu3
+
+
+
+si se cambia un archivo como Vagrantfile se relee con: source Vagrantfile
+
+
+
+
+Entrega del parcial: https://docs.google.com/forms/d/e/1FAIpQLSdbteKZ-2g148wEKJRnaab6QL9KXmZXV68BGSeIbhfjFoaBog/viewform
+
+
+
+Aprendí a usar EOF!!!!!!
+
+
+
+chown para cambiar propietario o grupo: chown usuario.grupo archivo
+ej1: chown vagrant.grupo_1 script.sh
+ej2: chown vagrant.grupo_1 /home/vagrant/carpeta/script.sh
+
+
+

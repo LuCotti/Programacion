@@ -1,0 +1,16 @@
+Las etapas del desarrollo de un programa:
+1) Análisis
+2) Diseño
+3) Codificación
+4) Tests
+
+
+Windows + Tab = ver ventanas del escritorio
+
+
+En la declaración de las funciones, primero van los parámetros obligatorios y al final los opcionales, no intercalados.
+
+Al llamar una función, los parámetros se pueden pasar por orden de las variables declaradas, o por nombre.
+
+Al declarar las variables de las funciones, se recomienda indicar qué tipo de dato se espera que reciban los parámetros
+

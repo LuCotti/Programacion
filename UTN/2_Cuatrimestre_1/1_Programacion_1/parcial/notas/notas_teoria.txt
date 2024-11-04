@@ -1,0 +1,62 @@
+PARADIGMAS DE LA PROGRAMACIÓN
+• Programación estructurada (lo primero que trabajamos). Se divide en secuencia, interacción (bucles) y selección (condicionales)
+• Programación funcional (todo con funciones).
+• Programación Orientada a Objetos (agrupando funciones en clases)
+• Programación reactiva (programas que se adaptan a diferentes eventos como altas cargas, errores o tiempos)
+
+LENGUAJES COMPILADOS O INTERPRETADOS
+
+
+INTRODUCCIÓN A PYTHON
+Creado por Guido Van Rossum 1989 lanzado 1991
+
+
+
+Casting: convertir un tipo de dato a otro
+
+
+Mutabilidad o inmutabilidad: verifica si un tipo de variable puede cambiar a otro
+
+
+
+Los int son inmutables. Lo que hace Python (o cualquier lenguaje) al cambiarles el valor es eliminarlos y crear otra variable con el nuevo valor. Tendrá otra id
+
+Inmutables: int, str, float, bool
+Mutables: listas
+
+
+
+match-case: se pueden poner dos o más valores por case usando el | (pipe)
+
+FUNCIÓN RANGE
+Se puede pasar hasta 3 parámetros (inicio, fin y salto entre cada iteración)
+
+BREAK Y CONTINUE
+Break: salir del bucle
+Continue: omitir solamente la iteración actual
+
+
+
+FUNCIONES
+Parámetros formales: son los parámetros declarados en la definición de la función.
+Parámetros actuales: son los parámetros declarados en la llamada de la función.
+
+Scope: alcance de una variable.
+
+Cohesión: conexión entre funciones (BUENO)
+Acoplamiento: dependencia entre funciones (MALO)
+
+
+
+MÓDULOS Y PAQUETES
+
+
+FUNCIONES RECURSIVAS
+
+
+
+ARREGLOS
+Arreglo unidimensional = vector
+Arreglo bidimensional = matriz
+Heap y Stack: montón y pila respectivamente
+

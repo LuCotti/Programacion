@@ -1,0 +1,5 @@
+Mr. Robot: serie recomendada
+Código Limpio: libro de programación
+
+Para el ejercicio 3: crear una clase con métodos y atributos
+

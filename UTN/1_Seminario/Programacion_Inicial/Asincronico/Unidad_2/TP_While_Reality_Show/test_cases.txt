@@ -1,0 +1,14 @@
+Caso de prueba 1:
+Lucas, 25, 1
+Mariano, 32, 2
+Camila, 28, 3
+
+Caso de prueba 2:
+Lucas, 25, 3
+Mariano, 32, 1
+Camila, 28, 2
+
+Caso de prueba 3:
+Lucas, 25, 2
+Mariano, 32, 3
+Camila, 28, 1

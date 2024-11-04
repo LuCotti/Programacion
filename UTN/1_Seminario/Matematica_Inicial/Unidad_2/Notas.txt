@@ -1,0 +1,8 @@
+Cuando partimos de decimal y queremos pasar 
+a cualquier otro, hay que hacer el 
+procedimiento largo.
+El procedimiento fácil se hace cuando se 
+parte de los otros y no desde decimal 
+porque todas las cuentas las realizamos en 
+ese sistema.
+

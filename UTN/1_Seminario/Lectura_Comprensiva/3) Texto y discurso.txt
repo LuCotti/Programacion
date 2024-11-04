@@ -1,0 +1,6 @@
+TEXTO Y DISCURSO
+Texto = codificación ligüística de un mensaje.
+Discurso = texto + situación comunicativa.
+Macroestructura = asunto o referente.
+Microestructura = subtemas.
+Superestructura = estructura del mensaje (intro, desarrollo, outro).

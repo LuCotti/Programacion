@@ -1,0 +1,6 @@
+1. fdisk -l
+2. sudo partprobe
+3. lsblk
+
+Memo para crear user:
+sudo useradd -m -s /bin/bash -G asdñflkasdlk -p "$()" sdañflkjasñlf

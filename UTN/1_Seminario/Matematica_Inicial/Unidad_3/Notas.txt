@@ -1,0 +1,16 @@
+Negación NO
+Conjunción Y (multiplicación)
+Disyunción O
+Condicional Sí
+Bicondicional Sí y solo sí
+
+
+
+Disyunción excluyente:
+	"Hoy es viernes u hoy es sábado"
+	(sólo una puede ser verdad)
+
+Disyunción inclusiva:
+	"Hoy es viernes o mañana es sábado"
+	(ambas pueden ser verdad)
+

@@ -1,0 +1,64 @@
+VM: Virtual Machines
+
+
+el ñuflo (~) indica que estamos en el home del usuario: vagrant@VMPruebas:~$
+
+Ctrl + A = ir al inicio de la linea de código donde estás escribiendo en git console
+Ctrl + L = limpiar consola de git
+Ctrl + W = borrar la última palabra en git console
+Ctrl + R = escribir comandos anteriores en el historial en consola de git
+Ctrl + D = desconectar de la máquina virtual o VM
+Ctrl + C = apagar la máquina virtual o VM
+
+vagrant up = prende la máquina virtual
+vagrant ssh = conecta con la máquina virtual
+
+history = para ver el historial de comandos ejecutados en git console
+
+mkdir = crea una carpeta donde estás parado
+
+pwd = muestra dónde estás
+
+ls -l = muestra carpetas y archivos de donde estás
+
+.. = para ir al home del usuario
+
+cd = cambiar dirección
+
+| (pai) = se llama tubería
+
+cat << FIN >> unarchivo (agrega al archivo)
+cat << FIN > unarchivo (sobreescribe el archivo)
+cat unarchivo (mostrar el contenido del archivo)
+
+
+man -k [descripción de lo que quiero buscar]
+man -k ^ip = busca todos los códigos que empiezen con ip
+man -k manual$ = busca todos los códigos que terminen con manual
+
+Alt Gr: Alt Gráfico
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

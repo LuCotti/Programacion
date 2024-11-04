@@ -1,0 +1,9 @@
+sudo apt install -y <lo_que_quieras>
+
+sed 's/:/,/g' (el : es el carácter a reemplazar por la ,)
+
+Revisar el repo de ejercicios
+Revisar el onboarding, lvm
+Instalar Docker
+
+df -h (para ver el filesystem)

@@ -1,0 +1,16 @@
+CIRCUITO COMUNICACIONAL
+1) Elementos:
+	• Emisor: sujeto que produce el mensaje.
+	• Receptor: sujeto que interpreta decodifica el mensaje.
+	• Referente: asunto o tema al cual alude el mensaje.
+	• Mensaje: el enunciado que produce el emisor.
+	• Canal: medio utilizado para transmitir el mensaje. Puede ser oral, escrito o audiovisual.
+	• Código: sistema de signos utilizado para transmitir el mensaje. Por ejemplo, el idioma.
+
+2) Circuito comunicacional reformulado (sobre el emisor/receptor):
+	• Competencia lingüística (capacidad del habla): totalidad de lo que una persona es capaz de codificar y decodificar lingüísticamente.
+	• Competencia paralingüística: lenguaje no verbal usado para reafirmar o contradecir el mensaje de la comunicación.
+	• Competencia cultural: se refiere a la capacidad de pensar, sentir y actuar de forma acorde a la cultura de la que una persona forma parte.
+	• Competencia ideológica: conocimientos sobre un tema en específico.
+	• Determinación psicológica (contexto): limitaciones relacionadas con los sentimientos de una persona a la hora de comunicarse con otra.
+	• Modelos de producción/recepción (carta, cuento, etc): diferentes formatos o estructuras textuales en base al objetivo de la redacción del mismo.

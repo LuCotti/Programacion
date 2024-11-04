@@ -1,0 +1,27 @@
+jueves 17-10-24 parcial de programación
+
+Aprobación directa: las dos partes.
+Aprobación no directa: parte 1.
+
+
+
+El parcial va a ser complejo. Practicar todo lo anterior para reforzar lo más que se pueda.
+
+El parcial tiene dos partes:
+1. Conceptos teóricos + lectura de código (formulario multiple choice). Duración de 30 minutos
+2. Práctica (entrega es un repositorio privado de Github). Duración de 3 horas
+
+
+
+Aprobar la parte 1 es condición para hacer la parte 2
+
+Habilitar cámara y dar acceso al escritorio de forma aleatoria (la semana que viene nos dicen cómo)
+
+Antes del parcial tener preparada a mano una carpeta con todas las funciones que pueda necesitar
+
+Hacer antes del parcial el repositorio con las claves y toda la perolata.
+
+
+
+Por las dudas quitar ChatGPT de la barra de tareas xd.
+

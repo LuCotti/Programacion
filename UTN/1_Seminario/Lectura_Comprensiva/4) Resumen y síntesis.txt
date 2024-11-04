@@ -1,0 +1,17 @@
+RESUMEN Y SÍNTESIS
+
+Resumen: reducción del texto sin cambiar ni una sola palabra. Pueden abarcar frases o párrafos. Debe tener coherencia y cohesión. No se pueden suprimir datos de los que luego surgen otros importantes.
+1) Supresión: se suprimen los elementos redundantes o irrelevantes.
+2) Selección: se jerarquizan las ideas y se evalúa cuáles son las indispensables.
+3) Generalización: se sustituyen varios elementos por un concepto más general o más abstracto.
+
+
+Síntesis: reducción del texto utilizando las palabras propias. Requiere comprensión, análisis y explicación.
+
+
+
+En ambos casos no se deben incluir ideas propias. Debe ser breve y concreto.
+
+
+
+Síntesis: exposición sin respetar el órden pero conservando la lógica, con menos argumentos.

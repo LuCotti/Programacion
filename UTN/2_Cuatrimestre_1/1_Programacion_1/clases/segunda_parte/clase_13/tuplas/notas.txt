@@ -1,0 +1,5 @@
+Las tuplas son inmutables, y eso las hace más eficientes.
+Son más rápidas, consumen menos memorias y son indicadas con grandes
+cantidades de datos que necesitan velocidad y rendimiento.
+
+set = conjunto en matemáticas

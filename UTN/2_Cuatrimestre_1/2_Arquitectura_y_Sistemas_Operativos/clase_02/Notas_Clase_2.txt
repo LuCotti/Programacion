@@ -1,0 +1,44 @@
+vdi virtal disk image (disco rígido)
+
+notas creación de máquina virtual:
+New -> name -> next
+hardware mermoria base 4 gb, 2 cpus
+disco duro para ubuntu no generar, para fedora sí generar disco rígido (30 gb) y luego de correr la primera vez, eliminar el cd
+next -> fin (en Ubuntu va a tirar una advertencia porque no hay disco rígido, aceptar)
+
+en el menú -> display -> video memory: al mango
+storage -> doble clic en [optical drive] Empty, subir disco
+settings advanced, ambos bidireccional
+screen, enable 3D
+
+
+configuración: almacenamiento -> controlador: SATA -> añadir disco rígido
+
+
+
+Git es una herramienta de versionado.
+GitHub y GitLab son los más usados.
+
+Ctrl + l = limpiar consola Git Bash
+Ctrl + e = abrir explorador de archivos
+
+Clic con la rueda del mouse para pegar en terminal Git Bash
+
+&: Amperson (parece que así se llama)
+
+cd - (para volver a donde estábamos antes en la terminal)
+
+software libre: software donde se puede ver el código fuente
+software propietario: lo contrario
+
+vagrant up (para levantar o arrancar una máquina virtual)
+vagrant ssh (para conectarse a la máquina virtual, para loguearte)
+exit o Ctrl + d para desloguearte
+vagrant destroy para apagar y eliminar
+
+Cuáles son las libertades? (pregunta de exámen)
+
+Kernel es lo que interactúa con el hardware
+
+Cuál es el directorio del usuario vagrant? /home/vagrant (pregunta de exámen)
+

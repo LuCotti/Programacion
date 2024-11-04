@@ -1,0 +1,23 @@
+OPERADORES
+• Lista de prioridades
+• Prioridad Operador
+• 1  +,-  unario  (x -= ...)
+• 2  **
+• 3  *,/,//,%
+• 4 +,-  binario
+
+
+
+25 % 3 (se dice veinticinco módulo tres)
+
+
+MrRobot
+
+
+
+REGLAS DE ESTILO
+• Código tabulado
+• El tamaño de cada línea debe tener como máximo 79 caracteres
+• Utilizar espacios
+
+ESTRUCTURAS DE CONTROL

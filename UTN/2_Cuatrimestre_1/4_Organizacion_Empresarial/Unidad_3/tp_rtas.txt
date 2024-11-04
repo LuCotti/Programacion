@@ -1,0 +1,65 @@
+### *RESPUESTAS A PREGUNTAS*
+
+1. *¿Se están cumpliendo las políticas de la empresa?*  
+   No, las modificaciones han generado pérdida de clientes y mayores costos, lo que no coincide con la política de accesibilidad y mantenimiento permanente del software.
+
+2. *¿En qué falló la proyección y el pronóstico?*  
+   Se subestimó el impacto negativo que los cambios en el software tendrían en los clientes. Las proyecciones no consideraron el rechazo a las nuevas políticas de cobro ni el aumento en los costos operativos.
+
+3. *¿Qué principios del planeamiento hubieran sido necesarios aplicar para intentar un mayor grado de éxito?*  
+   Hubiera sido esencial aplicar un análisis de riesgos más profundo, especialmente respecto a la percepción del cliente sobre los cambios. También, un estudio más detallado del mercado podría haber anticipado la reacción negativa de los usuarios.
+
+4. *¿Qué tipo de horizonte de planeamiento estoy aplicando en este proyecto?*  
+   El horizonte es a corto plazo, ya que las decisiones implementadas tuvieron un impacto inmediato en los ingresos y la relación con los clientes.
+
+5. *¿Qué tipo de decisión se está tomando? (de acuerdo a la clasificación de toma de decisiones)*  
+   Se trata de decisiones estratégicas, ya que afectan directamente la estructura de ingresos y costos de la empresa.
+
+6. *¿Qué tipo de forma de decisión estamos aplicando?*  
+   La forma de decisión es centralizada, ya que el directorio de la empresa tomó las decisiones sin consultar a los usuarios ni analizar profundamente el impacto.
+
+7. *¿Qué factor de toma de decisión se está utilizando?*  
+   El factor utilizado fue el incremento de ingresos a corto plazo, lo cual resultó en un aumento de costos y pérdida de clientes.
+
+8. *¿Qué tipo de control estoy aplicando?*  
+   Se está aplicando un control reactivo, ya que se están tomando acciones correctivas tras identificar los problemas surgidos de las decisiones anteriores.
+
+---
+
+### *ANÁLISIS DE VARIACIÓN*
+
+- *Ingresos presupuestados*: $150,000  
+- *Ingresos reales*: $144,000  
+- *Variación de ingresos*:  
+  \[
+  \frac{144,000 - 150,000}{150,000} \times 100 = -4\%
+  \]
+  Variación negativa del 4%.
+
+- *Costos operativos presupuestados*: $130,000,000  
+- *Costos operativos reales*: $142,000,000  
+- *Variación de costos operativos*:  
+  \[
+  \frac{142,000,000 - 130,000,000}{130,000,000} \times 100 = 9.23\%
+  \]
+  Variación negativa del 9.23%.
+
+- *Inversión presupuestada en servidores*: $10,000,000  
+- *Inversión real en servidores*: $14,400,000  
+- *Variación de inversión en servidores*:  
+  \[
+  \frac{14,400,000 - 10,000,000}{10,000,000} \times 100 = 44\%
+  \]
+  Variación negativa del 44%.
+
+---
+
+### *AJUSTES*
+
+1. *Ajustes operativos de presupuesto*  
+   - Reducir costos operativos renegociando contratos de servicios básicos (agua, electricidad e internet).
+   - Implementar mejoras técnicas para optimizar el uso de servidores y reducir costos de mantenimiento.
+
+2. *Acciones correctivas*  
+   - Revertir algunos de los cambios que causaron disconformidad entre los clientes, como devolver ciertas funciones gratuitas.
+   - Lanzar una campaña de comunicación para explicar los beneficios de las funciones de pago y ofrecer descuentos o promociones.

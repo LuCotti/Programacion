@@ -1,0 +1,30 @@
+cat = leer un archivo o mostrar el contenido
+etc: directorio donde están los archivos de configuración
+sudo su = cambiar a usuario root (el prompt cambia, solo se ve $)
+su vagrant = entrar a vagrant desde el root
+who = ver quién está iniciado sesión
+para desloguearte del root = Ctrl + D (2 veces)
+^ en consola = Ctrl
+para borrar un usuario = userdel -r
+
+sudo = para hacer algo como otro usuario (por ejemplo para cambiar la
+contraseña de otro usuario)
+
+man -k net | grep ip = para buscar en el man ip en este caso
+
+ls -l (columna 1):
+-rwxrw-r--
+Primer caracter: carpeta (d) o archivo (-)
+Ultimos 9 (3 grupos de 3): permisos, R (lectura), W (escritura), X (ejecutar)
+
+
+SOBRE VIM
+vim [nombre_de_archivo] = entrar al vim
+i = modo inserción
+esc = salir del modo inserción
+:q = salir sin guardar (siempre presionar Esc para asegurarse de no estar en modo inserción)
+:q! = forzar salida
+:wq = guardar y salir
+
+#! (se llama shiban)
+

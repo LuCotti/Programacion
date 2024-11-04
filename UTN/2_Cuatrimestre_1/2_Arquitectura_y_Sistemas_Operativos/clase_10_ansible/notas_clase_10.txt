@@ -1,0 +1,14 @@
+host inventory: ips
+
+y5y para copiar 5 renglones en vim
+
+:28 te lleva a la línea 28
+
+ifconfig te muestra datos, por ejemplo ip
+
+ver pc-workstation en el onboarding
+
+become: yes    equivalente al sudo
+
+tp grupal
+

@@ -1,0 +1,47 @@
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net:WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+con 4 aprueban, con 7 promocionan
+
+chocolatey es un gestor de archivos para windows
+
+Dato: dato simple
+
+Información: dato procesado
+
+Generaciones de computadoras
+
+1ra generación: válvulas de vacío. 1951-1958
+
+2da generación: transistores. 1959-1964
+
+3ra generación: circuitos integrados. 1964-1971
+
+4ta generación: microcircuitos o microprocesadores. 1971-1990
+
+5ta generación: inteligencia artificial. 1990-presente.
+
+pc: computadora personal (supongo personal computer)
+
+EL CPU SE COMPONE DE:
+1. ALU: UNIDAD ARITMETICA LOGICA
+2. UNIDAD DE CONTROL
+
+para comprar procesadores no fijarse en la cantidad de procesadores
+
+comparar la cantidad de nucleos por la frecuencia
+
+AMD tiene muchos nucleos a poca frecuencia y INTEL al revés
+
+
+
+Hipervisor de tipo 1 y 2
+
+virtualbox tipo 2
+
+
+
+
+finalizar la instalación, apagar la máquina desde system -> shut down. Quitar cd. eliminar disco de la unidad virtual. iniciar de nuevo
+
+
+aplicaciones -> monitor del sistema

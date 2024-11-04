@@ -1,0 +1,27 @@
+useradd -b /P_Defensa/
+
+
+printeando un comando ejemplo "sudo useradd..." se lo puede ejecutar igualmente agregando | bash
+
+ejemplo:
+print "sudo useradd -m -s /bin/bash -b /P_Defensa/ -G " $1" pepito2 " | bash
+
+
+NUNCA usar snap, siempre apt
+
+ANTES de ejecutar sudo apt install tree (o para instalar cualquier comando):
+sudo apt update
+
+
+grep -Ev "Disk|$HOME"   (para buscar más de una palabra con grep)
+
+
+
+
+PARA EL FORMATEO DE LAS PARTICIONES EN EL PUNTO B:
+sudo fdisk -l /dev/sdc | grep /dev/sdc | grep -Eiv "Dis|EXTE" | awk '{print "sudo mkfs.ext4" $1}'
+
+su = switch user
+
+cd - (para ir a donde estaba antes)
+
