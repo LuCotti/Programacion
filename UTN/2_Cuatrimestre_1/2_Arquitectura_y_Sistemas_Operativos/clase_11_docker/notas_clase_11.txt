@@ -1,0 +1,37 @@
+ansible-galaxy --help
+ansible-galaxy role --help
+ansible-galaxy role init --help
+ansible-galaxy role init role_pepito
+main.yml (formato para script en ansible)
+ansible-galaxy requeriment.yml install -r
+
+docker run
+docker pull
+docker build
+
+&& ejecuta lo de la derecha si lo de la izquierda salió bien
+
+
+# A basic apache server
+FROM ubuntu:14.04
+MAINTAINER Kimbro Staken version: 0.1
+RUN pat-get update // apt-get install -y apache2
+ENV APACHE_LOG_DIR /var/log/apache2
+EXPOSE 80
+CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
+
+df -h /var/lib/docker (porque se montó en /dev/mapper/vg_datos...)
+
+docker run -d -p 80:80 kennethreitz/httpbin
+
+docker ps
+docker logs <id> (agregar -f para no se que)
+netstat -putona (-p para mostrar puertos)
+sudo netstat -tunlop
+docker stop <id>
+curl !ifconfig me (o algo así)
+sudo nmap -p 22 host1 (para ver si el puerto 22 de host1 está abierto)
+docker exec -ti <id> /bin/bash
+docker build -t some-content-nginx .
+docker image list
+docker compose up -d

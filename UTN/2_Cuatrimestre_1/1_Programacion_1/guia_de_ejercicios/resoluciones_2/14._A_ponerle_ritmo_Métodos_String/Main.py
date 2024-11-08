@@ -2,6 +2,7 @@
 from datetime import datetime
 
 # Datos
+otro_tema = 'Mi Libertad'
 tema = 'Karina | J mena | Angela - Sinvergüenza'
 vistas = '45.8 millones'
 duración = '228'
@@ -21,10 +22,18 @@ def obtener_colaboradores(titulo: str) -> list:
 
 # 2. obtener_nombre_tema(str) -> str: retorna el nombre del tema.
 def obtener_nombre_tema(titulo: str) -> str:
-    colaboradores = titulo.split('-')[1].strip()
-    print(colaboradores)
+    contiene_guion = False
+    for i in range(len(titulo)):
+        if titulo[i] == '-':
+            contiene_guion = True
+    
+    if contiene_guion:
+        nombre_tema = titulo.split('-')[1].strip()
+    else:
+        nombre_tema = titulo
+    print(nombre_tema)
 # # Test
-# obtener_nombre_tema(tema)
+obtener_nombre_tema(tema)
 
 
 

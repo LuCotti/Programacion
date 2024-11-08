@@ -1,3 +1,4 @@
+# Lista de reproducción
 temas = [
 {"tema": "El Temblor", "fecha_lanzamiento": "2017-03-12", "vistas":
 "45.8 millones", "duracion": "235", "link":
@@ -68,6 +69,24 @@ temas = [
 "https://www.youtube.com/watch?v=B6C7D8E9F0"}
 ]
 
+# Funciones
+def normalizar_datos(lista: list) -> None:
+    for i in range(len(lista)):
+        print(lista[i])
+
+def obtener_nombre_tema(titulo: str) -> str:
+    contiene_guion = False
+    for i in range(len(titulo)):
+        if titulo[i] == '-':
+            contiene_guion = True
+    
+    if contiene_guion:
+        nombre_tema = titulo.split('-')[1].strip()
+    else:
+        nombre_tema = titulo
+    print(nombre_tema)
+
+# Menú
 menu = '''
 A. NORMALIZAR DATOS.
 B. MOSTRAR TEMAS.
@@ -80,29 +99,32 @@ H. LISTAR POR COLABORADOR.
 I. LISTAR POR MES.
 J. SALIR.
 '''
-while True:
-    print(menu)
-    opcion_ingresada = input('Ingrese una de las opciones anteriores: ')
-    match opcion_ingresada:
-        case 'A':
-            pass
-        case 'B':
-            pass
-        case 'C':
-            pass
-        case 'D':
-            pass
-        case 'E':
-            pass
-        case 'F':
-            pass
-        case 'G':
-            pass
-        case 'H':
-            pass
-        case 'I':
-            pass
-        case 'J':
-            break
-        case _:
-            print('La opción ingresada no existe.')
+# while True:
+#     print(menu)
+#     opcion_ingresada = input('Ingrese una de las opciones anteriores: ')
+#     match opcion_ingresada:
+#         case 'A':
+#             normalizar_datos(temas)
+#         case 'B':
+#             for i in range(len(temas)):
+#                 obtener_nombre_tema(temas[i]['tema'])
+#         case 'C':
+#             pass
+#         case 'D':
+#             pass
+#         case 'E':
+#             pass
+#         case 'F':
+#             pass
+#         case 'G':
+#             pass
+#         case 'H':
+#             pass
+#         case 'I':
+#             pass
+#         case 'J':
+#             break
+#         case _:
+#             print('La opción ingresada no existe.')
+
+
