@@ -1,0 +1,80 @@
+Persistencia de datos
+
+Datos Volátiles --> Memoria RAM
+
+Persistencia --> Mantener los datos almacenados más allá de la ejecución del 
+programa. Medio duradero. Accesibles y existiendo aunque el sistema se apague.
+
+1. Conservación de datos. Preservar datos importantes. (configuraciones de usuario, registros de actividad, información del usuario, etc)
+
+2. Recuperación de estados previos.
+
+3. Accesibilidad y análisis de datos. Sirven para generar reportes para la toma
+de decisiones.
+
+4. Eficiencia y experiencia del usuario. Mejoran del usuario. Guardar sus preferencias sus actividades, etc.
+
+5. Seguridad y respaldo. Backups regulares nos permite guardar información crítica.
+
+===========================================================================
+Plataforma GMAIL
+
+1. Gestión de Correos electrónicos
+2. Borradores 
+3. Configuración de Usuario
+4. Etiquetas y Carpeta
+5. Historial búsqueda y recomendaciones
+6. Contactos y Grupos de Contacto
+7. Mensajes enviados y Recibidos
+
+Estructuras de Datos
+--------------------
+Variables
+Listas
+Matrices
+Tuplas
+Sets
+Diccionarios
+Archivos
+
+Archivos ---> Textos y Binarios
+
+Intercambio entre sistemas --> .csv y .json (son archivos de texto)
+
+Un Archivo CSV (Comma-Separeted Values), 
+
+*cada línea representa una fila en una tabla.
+*Los valores de cada fila están separados por un delimitador (, o ; o | ) tabulaciones
+*La primera línea suele ser opcional, los nombres de las columnas
+
+Por ejemplo: inventario de productos
+
+csv
+ID,Nombre,Cantidad,Precio   ---> Encabezado
+1,Lapiz,50,0.5
+2,Lapicera,100,1.2
+3,"Cuaderno de 100 hojas, color azul",30,2.5
+4,Regla,25,0.8
+
+=================================================================================
+Archivos JSON (JavaScript Object Notation): son esenciales debido a su simplicidad, legibilidad y estructura clara. Se usan intercambio datos
+
+1. Estandarización y Legibilidad: su estructura clave-valor (similar a los diccionarios de python). Permitía jerarquía complejidad pero de una forma clara
+
+2. Intercambio de datos en aplicaciones web
+
+3. Compatibilidad multiplataforma: múltiples lenguajes son compatibles. Lo convierte en un formato ideal para la comunicación entre diferentes sistemas
+
+4. Almacenamiento de configuraciones y datos temporales
+
+
+
+
+
+
+
+
+
+
+
+

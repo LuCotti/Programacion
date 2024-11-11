@@ -1,4 +1,11 @@
-# Lista de reproducción
+# IMPORTACIONES NECESARIAS
+from Package_Input.Input import *
+from Package_ordenamiento.ordenamiento import *
+from datetime import datetime
+
+
+
+# LISTA DE REPRODUCCIÓN
 temas = [
 {"tema": "El Temblor", "fecha_lanzamiento": "2017-03-12", "vistas":
 "45.8 millones", "duracion": "235", "link":
@@ -69,24 +76,122 @@ temas = [
 "https://www.youtube.com/watch?v=B6C7D8E9F0"}
 ]
 
-# Funciones
+
+
+# FUNCIONES DEL EJERCICIO ANTERIOR (ADAPTADAS)
+def obtener_tema(titulo: str) -> list:
+    print(f'Tema: {titulo}')
+    return titulo
+
+# Test
+# for i in range(len(temas)):
+#     obtener_tema(temas[i]['tema'])
+
+def formatear_fecha(fecha: str) -> datetime:
+    fecha = fecha.replace('-', '')
+    año, mes, dia = int(fecha[0:4]), int(fecha[4:6]), int(fecha[6:8])
+    fecha = datetime(año, mes, dia)
+    print(f'Fecha de lanzamiento: {fecha}')
+    return fecha
+
+# Test
+# for i in range(len(temas)):
+#     formatear_fecha(temas[i]['fecha_lanzamiento'])
+
+
+def convertir_vistas_numerico(vistas: str) -> int:
+    vistas = float(vistas.split(' ')[0]) * 1000000
+    vistas = int(vistas)
+    print(f'Vistas: {vistas}')
+    return vistas
+
+# Test
+# for i in range(len(temas)):
+#     convertir_vistas_numerico(temas[i]['vistas'])
+
+def normalizar_duracion(duracion: str) -> int:
+    if validate_number(duracion):
+        duracion = int(duracion)
+        duracion_min = str(duracion // 60)
+        duracion_seg = duracion % 60
+        if duracion_seg < 10:
+            duracion_seg = str(duracion_seg)
+            duracion_normalizada = duracion_min + ':0' + duracion_seg
+        else:
+            duracion_seg = str(duracion_seg)
+            duracion_normalizada = duracion_min + ':' + duracion_seg
+        
+        print(f'Duración: {duracion_normalizada}')
+        return duracion_normalizada
+    else:
+        print('El dato ingresado es inválido.')
+        return None
+
+# Test
+# for i in range(len(temas)):
+#     normalizar_duracion(temas[i]['duracion'])
+
+def obtener_codigo(link: str) -> str:
+    print(f'Link: {link}')
+    return link
+
+# Test
+# for i in range(len(temas)):
+#     obtener_codigo(temas[i]['link'])
+
+
+
+# FUNCIONES PRINCIPALES
+# 1. Normalizar datos
 def normalizar_datos(lista: list) -> None:
     for i in range(len(lista)):
-        print(lista[i])
+        print('')
+        print(f'TEMA {i + 1}')
+        obtener_tema(lista[i]['tema'])
+        formatear_fecha(lista[i]['fecha_lanzamiento'])
+        convertir_vistas_numerico(lista[i]['vistas'])
+        normalizar_duracion(lista[i]['duracion'])
+        obtener_codigo(lista[i]['link'])
+    return None
 
-def obtener_nombre_tema(titulo: str) -> str:
-    contiene_guion = False
-    for i in range(len(titulo)):
-        if titulo[i] == '-':
-            contiene_guion = True
-    
-    if contiene_guion:
-        nombre_tema = titulo.split('-')[1].strip()
-    else:
-        nombre_tema = titulo
-    print(nombre_tema)
+# 2. Mostrar temas
+def mostrar_temas(lista: list) -> None:
+    for i in range(len(lista)):
+        contiene_guion = False
+        for j in range(len(lista[i]['tema'])):
+            if lista[i]['tema'][j] == '-':
+                contiene_guion = True
+        
+        if contiene_guion:
+            nombre_tema = lista[i]['tema'].split('-')[1].strip()
+        else:
+            nombre_tema = lista[i]['tema']
+        print(f'Tema {i + 1}: {nombre_tema}')
+    return None
 
-# Menú
+# 3. Ordenar temas
+def ordenar_temas(lista: list) -> list:
+    lista_temas_duracion = [] # Genero una lista vacía que solo contendrá la duración de cada tema
+    for i in range(len(lista)):
+        lista_temas_duracion.append(int(lista[i]['duracion']))
+    lista_temas_duracion = quick_sort(lista_temas_duracion, 'DES') # Ordeno la lista de mayor a menor
+    lista_temas_ordenados = [] # Genero una lista vacía que contendrá toda la información ordenada
+    for i in range(len(lista_temas_duracion)):
+        for j in range(len(lista)):
+            if lista_temas_duracion[i] == int(lista[j]['duracion']):
+                lista_temas_ordenados.append(lista.pop(j))
+                break
+    return lista_temas_ordenados
+
+# 4. Promedio de vistas (TERMINAR)############################################################################################################################################################################################################################################################################################
+def mostrar_promedio_vistas(lista: list) -> None:
+    lista_vistas = []
+    for i in range(len(lista)):
+        lista_vistas.append(int(lista[i]['vistas']))
+        nombre_tema = lista[i]['tema']
+    print(f'Tema {i + 1}: {nombre_tema}')
+    return None
+# Menú y bucle
 menu = '''
 A. NORMALIZAR DATOS.
 B. MOSTRAR TEMAS.
@@ -99,32 +204,30 @@ H. LISTAR POR COLABORADOR.
 I. LISTAR POR MES.
 J. SALIR.
 '''
-# while True:
-#     print(menu)
-#     opcion_ingresada = input('Ingrese una de las opciones anteriores: ')
-#     match opcion_ingresada:
-#         case 'A':
-#             normalizar_datos(temas)
-#         case 'B':
-#             for i in range(len(temas)):
-#                 obtener_nombre_tema(temas[i]['tema'])
-#         case 'C':
-#             pass
-#         case 'D':
-#             pass
-#         case 'E':
-#             pass
-#         case 'F':
-#             pass
-#         case 'G':
-#             pass
-#         case 'H':
-#             pass
-#         case 'I':
-#             pass
-#         case 'J':
-#             break
-#         case _:
-#             print('La opción ingresada no existe.')
-
-
+while True:
+    print(menu)
+    opcion_ingresada = get_string('Ingrese una de las opciones anteriores: ', 'Error.', 1, 3)
+    opcion_ingresada = opcion_ingresada.upper()
+    match opcion_ingresada:
+        case 'A':
+            normalizar_datos(temas)
+        case 'B':
+            mostrar_temas(temas)
+        case 'C':
+            temas = ordenar_temas(temas)
+        case 'D':
+            mostrar_promedio_vistas(temas)
+        case 'E':
+            pass
+        case 'F':
+            pass
+        case 'G':
+            pass
+        case 'H':
+            pass
+        case 'I':
+            pass
+        case 'J':
+            break
+        case _:
+            print('La opción ingresada no existe.')

@@ -33,7 +33,7 @@ def obtener_nombre_tema(titulo: str) -> str:
         nombre_tema = titulo
     print(nombre_tema)
 # # Test
-obtener_nombre_tema(tema)
+# obtener_nombre_tema(tema)
 
 
 

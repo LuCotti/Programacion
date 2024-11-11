@@ -8,7 +8,7 @@ notas de un archivo de texto.
 def mostrar_menu():
     print('\n---- Gestor de notas ----')
     print('1. Agregar nota.')
-    print('2. Leer nota.')
+    print('2. Leer notas.')
     print('3. Eliminar nota.')
     print('4. Salir.')
 
@@ -33,15 +33,12 @@ def leer_notas():
 def eliminar_nota():
     leer_notas() # Muestro todas las notas para que elija cuál va a eliminar.
     num_nota = int(input('Ingrese el número de nota a eliminar: '))
-    archivo = open('notas_2.txt', 'r')
+    archivo = open('notas_2.txt', 'w+')
     notas = archivo.readlines()
-    archivo.close()
     
     if 1 <= num_nota <= len(notas):
         del notas[num_nota - 1]
-        archivo = open('notas_2.txt', 'r')
-        archivo.readlines()
-        archivo.close()
+        archivo.writelines(notas)
     else:
         print('Número de nota inválido.')
 
