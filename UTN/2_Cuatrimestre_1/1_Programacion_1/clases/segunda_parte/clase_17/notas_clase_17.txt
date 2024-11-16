@@ -1,0 +1,15 @@
+CMD:
+mkdir mi_proyecto # Creamos el proyecto
+cd mi_proyecto/
+git init
+python -m venv entorno_virtual # Creamos el entorno virtual
+ls -la
+ls -la entorno_virtual/
+entorno_virtual\Scripts\activate # Activamos el entorno virtual
+pip install pygame
+pip list
+python -m pygame.examples.aliens # Debería salir un jueguito
+code . # Abre el proyecto con VSCode
+entorno_virtual\Scripts\deactivate.bat # Desactivar entorno virtual
+
+# Activar siempre que se reinicia el equipo

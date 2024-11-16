@@ -99,11 +99,9 @@ def formatear_fecha(fecha: str) -> datetime:
 #     formatear_fecha(temas[i]['fecha_lanzamiento'])
 
 
-def convertir_vistas_numerico(vistas: str) -> int:
-    vistas = float(vistas.split(' ')[0]) * 1000000
-    vistas = int(vistas)
+def normalizar_vistas(vistas: str) -> None:
     print(f'Vistas: {vistas}')
-    return vistas
+    return None
 
 # Test
 # for i in range(len(temas)):
@@ -149,7 +147,7 @@ def normalizar_datos(lista: list) -> None:
         print(f'TEMA {i + 1}')
         obtener_tema(lista[i]['tema'])
         formatear_fecha(lista[i]['fecha_lanzamiento'])
-        convertir_vistas_numerico(lista[i]['vistas'])
+        normalizar_vistas(lista[i]['vistas'])
         normalizar_duracion(lista[i]['duracion'])
         obtener_codigo(lista[i]['link'])
     return None
@@ -183,14 +181,110 @@ def ordenar_temas(lista: list) -> list:
                 break
     return lista_temas_ordenados
 
-# 4. Promedio de vistas (TERMINAR)############################################################################################################################################################################################################################################################################################
+# 4. Promedio de vistas
+def convertir_vistas_numerico(vistas: str) -> int:
+    vistas = float(vistas.split(' ')[0]) * 1000
+    vistas = int(vistas)
+    return vistas
+
 def mostrar_promedio_vistas(lista: list) -> None:
-    lista_vistas = []
-    for i in range(len(lista)):
-        lista_vistas.append(int(lista[i]['vistas']))
-        nombre_tema = lista[i]['tema']
-    print(f'Tema {i + 1}: {nombre_tema}')
+    acumulador = 0
+    contador = 0
+    for i in range(len(lista)): # Bucle for para cargar las variables acumulador y contador.
+        acumulador += convertir_vistas_numerico(lista[i]['vistas'])
+        contador += 1
+    
+    promedio = acumulador // contador
+    print(f'Promedio de vistas: {promedio} k.')
     return None
+
+# 5. Máxima reproducción
+def mostrar_maxima_reproduccion(lista):
+    videos_con_mayor_reproduccion = [] # Defino una lista que contendrá las posiciones de los videos con mayor reproducción.
+    maxima_reproduccion = 0 # Defino una variable que contendrá la cantidad de vistas del video con el máximo de estas.
+    for i in range(len(lista)):
+        if i == 0:
+            maxima_reproduccion = convertir_vistas_numerico(lista[i]['vistas'])
+            videos_con_mayor_reproduccion.append(i)
+        elif convertir_vistas_numerico(lista[i]['vistas']) > maxima_reproduccion:
+            videos_con_mayor_reproduccion.clear()
+            maxima_reproduccion = convertir_vistas_numerico(lista[i]['vistas'])
+            videos_con_mayor_reproduccion.append(i)
+        elif convertir_vistas_numerico(lista[i]['vistas']) == maxima_reproduccion:
+            videos_con_mayor_reproduccion.append(i)
+    
+    lista_nueva = [] # Creo una lista de reproducción que solo contenga los ítems de mayor vistas.
+    for i in range(len(videos_con_mayor_reproduccion)):
+        lista_nueva.append(lista[videos_con_mayor_reproduccion[i]])
+    
+    normalizar_datos(lista_nueva) # Despliego los datos normalizados de la nueva lista.
+
+# 6. Mínima reproducción
+def mostrar_minima_reproduccion(lista):
+    videos_con_minima_reproduccion = [] # Defino una lista que contendrá las posiciones de los videos con mínima reproducción.
+    minima_reproduccion = 0 # Defino una variable que contendrá la cantidad de vistas del video con el mínimo de estas.
+    for i in range(len(lista)):
+        if i == 0:
+            minima_reproduccion = convertir_vistas_numerico(lista[i]['vistas'])
+            videos_con_minima_reproduccion.append(i)
+        elif convertir_vistas_numerico(lista[i]['vistas']) < minima_reproduccion:
+            videos_con_minima_reproduccion.clear()
+            minima_reproduccion = convertir_vistas_numerico(lista[i]['vistas'])
+            videos_con_minima_reproduccion.append(i)
+        elif convertir_vistas_numerico(lista[i]['vistas']) == minima_reproduccion:
+            videos_con_minima_reproduccion.append(i)
+    
+    lista_nueva = [] # Creo una lista de reproducción que solo contenga los ítems de menor vistas.
+    for i in range(len(videos_con_minima_reproduccion)):
+        lista_nueva.append(lista[videos_con_minima_reproduccion[i]])
+    
+    normalizar_datos(lista_nueva) # Despliego los datos normalizados de la nueva lista.
+
+# 7. Búsqueda por código (posición en la lista temas)
+def buscar_por_codigo(lista: list) -> None:
+    codigo = get_int('Ingrese el código del video (1 - 22): ', 'Error.', 1, len(lista), 3)
+    codigo -= 1
+    lista_nueva = [] # Debo crear una lista con un único elemento ya que la función normalizar_datos debe recibir una lista como parámetro.
+    for i in range(len(lista)):
+        if codigo == i:
+            lista_nueva.append(lista[i])
+    normalizar_datos(lista_nueva)
+
+# 8. Listar por colaborador
+def buscar_subcadenas(cadena: str, subcadena: str) -> int:
+    contador_subcadena = 0
+    for i in range(len(cadena)):
+        contador_auxiliar = 0
+        if cadena[i] == subcadena[0]:
+            try:
+                for j in range(1, len(subcadena)):
+                    if cadena[i + j] == subcadena[j]:
+                        contador_auxiliar += 1
+                if contador_auxiliar == len(subcadena) - 1:
+                    contador_subcadena += 1
+                else:
+                    continue
+            except IndexError:
+                continue
+    
+    return contador_subcadena
+
+def listar_por_colaborador(lista: list) -> None:
+    # Pido por consola el dato.
+    colaborador_ingresado = input('Ingrese el colaborador: ')
+    # Creo la lista
+    lista_nueva = []
+    
+    for i in range(len(lista)):
+        if buscar_subcadenas(lista[i]['tema'], colaborador_ingresado) != 0:
+            lista_nueva.append(lista[i])
+    
+    normalizar_datos(lista_nueva)
+    return None
+
+# 9. Listar por mes (ACÁ ME QUEDÉ)############################################################################################################################################################################################################################
+
+
 # Menú y bucle
 menu = '''
 A. NORMALIZAR DATOS.
@@ -204,6 +298,7 @@ H. LISTAR POR COLABORADOR.
 I. LISTAR POR MES.
 J. SALIR.
 '''
+flag_datos_normalizados = False
 while True:
     print(menu)
     opcion_ingresada = get_string('Ingrese una de las opciones anteriores: ', 'Error.', 1, 3)
@@ -211,20 +306,42 @@ while True:
     match opcion_ingresada:
         case 'A':
             normalizar_datos(temas)
+            flag_datos_normalizados = True
         case 'B':
-            mostrar_temas(temas)
+            if flag_datos_normalizados:
+                mostrar_temas(temas)
+            else:
+                print('Primero se deben normalizar los datos.')
         case 'C':
-            temas = ordenar_temas(temas)
+            if flag_datos_normalizados:
+                temas = ordenar_temas(temas)
+            else:
+                print('Primero se deben normalizar los datos.')
         case 'D':
-            mostrar_promedio_vistas(temas)
+            if flag_datos_normalizados:
+                mostrar_promedio_vistas(temas)
+            else:
+                print('Primero se deben normalizar los datos.')
         case 'E':
-            pass
+            if flag_datos_normalizados:
+                mostrar_maxima_reproduccion(temas)
+            else:
+                print('Primero se deben normalizar los datos.')
         case 'F':
-            pass
+            if flag_datos_normalizados:
+                mostrar_minima_reproduccion(temas)
+            else:
+                print('Primero se deben normalizar los datos.')
         case 'G':
-            pass
+            if flag_datos_normalizados:
+                buscar_por_codigo(temas)
+            else:
+                print('Primero se deben normalizar los datos.')
         case 'H':
-            pass
+            if flag_datos_normalizados:
+                listar_por_colaborador(temas)
+            else:
+                print('Primero se deben normalizar los datos.')
         case 'I':
             pass
         case 'J':

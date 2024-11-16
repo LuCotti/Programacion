@@ -1,0 +1,52 @@
+VIM
+dd: borrar línea
+d3d: borrar 3 líneas
+gg: ir al principio
+y3y: copiar 3 líneas
+p: pegar
+x: igual que Supr
+
+/etc/redhat
+/etc/debian  ---> para saber en qué SO estamos parados para saber el manejador de paquetes (si es apt o el otro)
+
+
+
+
+docker image list
+docker images
+docker build -t cotti/web1:v1 -t cotti/web1:latest . (-t para tag)
+
+docker login -u <nombre_usuario>
+docker push
+
+Ctrl + A: ir al principio de la línea en la terminal
+
+docker push -a cotti/web1
+
+Ctrl + R: búsqueda inversa
+
+docker exec -it 24ff /bin/bash
+
+&& (si el primero sale bien ejecuta el segundo)
+
+No crear el users desde el windows
+
+.vagrant/machines/primero/virtualbox/private_key (clave para conectarse con ssh)
+
+git branch R1 (para crear una rama R1)
+
+git switch R1 (para cambiar a una rama R1)
+
+adelante: antes de la palabra
+atrás: después de la palabra
+
+ssh-keygen -t ed25519
+ssh-copy-id <nombre_usuario> (ejecutar este comando contra todas las máquinas necesarias)
+ssh <nombre_usuario>
+
+usar --help ante la duda de cómo usar un comando
+
+-\|/- jeje
+
+Alt Gr: alt gráfico
+

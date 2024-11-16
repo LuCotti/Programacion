@@ -1,0 +1,13 @@
+Con CMD:
+1. Elegimos donde guardar el proyecto y entramos al CMD en la carpeta deseada.
+2. Ejecutar: mkdir nombre_proyecto
+3. Ejecutar: cd nombre_protecto
+4. Ejecutar: git init
+5. Ejecutar: Python -m venv nombre_entorno_virtual
+6. Activamos el entorno: nombre_entorno_virtual\Scripts\activate
+7. Si en el pront aparece el nombre del entorno virtual significa que fue activado correctamente.
+8. Ejecutar: pip install pygame
+9. Ejecutar: pip list para ver los paquetes instalados
+10. Ejecutar: python -m pygame.examples.aliens (te tendría que salir un juego)
+11. Ejecutar: code . (Te debería abrir el entorno virtual con visual estudio)
+12. Estado en el directorio del proyecto: entorno_virtual\Scripts\deactivate.bat 
