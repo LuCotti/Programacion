@@ -1,0 +1,40 @@
+El parcial es con la vm hecha en el tp.
+
+Ejemplos de qué hacer en el parcial:
+Hacer un rol que dé de alta un usuario, un grupo, que instale paquetes
+
+echo "col1:col2;col3" | awk -F ';' '{print "echo "$1 " | wc -c" }' | \bin\bash  -----> (para ejecutar algo printeado con awk)
+
+
+MENSAJES DEL CHAT:
+Marcos Almiron
+8:40 p.m.
+LIST_USUARIOS:
+    - { USERNAME: "R1_Collante", GROUP: "G_R1" , GROUPS: "municipalidad-de-la-utn"}
+    - { USERNAME: "R2_Aguirre", GROUP: "G_R2" , GROUPS: "municipalidad-de-la-utn"}
+    - { USERNAME: "R3_Beneju", GROUP: "G_R3" , GROUPS: "municipalidad-de-la-utn"}
+    - { USERNAME: "R4_Camara", GROUP: "G_R4" , GROUPS:  "municipalidad-de-la-utn"}
+    - { USERNAME: "R5_Almiron", GROUP: "G_R5" , GROUPS:  "municipalidad-de-la-utn"}
+    - { USERNAME: "R6_Benegas", GROUP: "G_R6" , GROUPS:  "municipalid
+Marcos Almiron
+8:53 p.m.
+- name: get hash password {{ USERNAME }}
+  become: yes
+  local_action: shell grep  {{ USERNAME }} /etc/shadow |awk -F ':' '{print $2}'
+  register: PASSWORD_SHA512
+"{{ PASSWORD_SHA512.stdout }}"
+Marcos Almiron
+9:09 p.m.
+debug:
+    msg: "{{  PASSWORD_SHA512.stdout }}"
+
+
+
+
+EL SWAP NO SE MONTA, SE HACE LO SIGUIENTE:
+sudo swapon /dev/mapper/vg_datos-lv_swap1
+
+sudo swapon -s
+
+
+

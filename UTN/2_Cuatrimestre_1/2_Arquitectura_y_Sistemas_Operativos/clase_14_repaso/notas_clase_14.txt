@@ -1,0 +1,119 @@
+desinstalar git bash
+volver a instalarlo desde la página oficial tildando la opción "usar ssh externa"
+
+
+
+CRUZAR CLAVES SSH:
+cd (ir al home)
+ssh-keygen (3 veces enter)
+
+
+cat .ssh/id_rsa.pub
+ssh-copy-id vagrant@pc-Pirulin (@nombre_pc)
+cat .ssh/authorized_keys (debería salir el hash)
+
+
+
+
+grep -i pass /etc/ssh/sshd_config
+grep -i pass /etc/ssh/sshd_config.d/60-cluodimg-settings.conf
+
+
+
+
+echo comando (para ver lo que vas a ejecutar, por si metes variables o comandos adentro)
+
+
+df -h (para ver el espacio en las particiones o los discos filesystem, no swap)
+df -h /var/lib/docker/
+
+man -k swap (hace apropos)
+free (muestra el espacio total, usado y libre)
+swapon -s (muestra los swap montados)
+lsblk -f /dev/sdc (para ver la info de un solo disco)
+
+
+
+
+DOCKER:
+docker pull nginx
+sudo systemctl status docker
+q (para salir)
+sudo systemctl restart docker
+q
+
+
+
+
+cd - (para ir al directorio anterior)
+
+
+
+docker build -t lbricchi/pagina-pirulin:v1 -t lbricchi/Pagina-pirulin:latest . (modificar según el caso)
+
+
+
+
+docker login -u <nombre_usuario> (para loguearse en dockerhub)
+(para ver la clave ir a la página de dockerhub, loguearse, settings, personal access token, crear nuevo, nombre temporal, None, Read & Write, copiar y pegar en la terminal)
+
+Para subir:
+docker push lbricchi/pagina-pirulin -a (cambiar según corresponda, --help si no me acuerdo)
+
+
+
+Para ejecutar:
+docker run -d -p 80:80 -v "$PWD"/web/file/:/usr/share/nginx/html/file lbricchi/pagina-pirulin:v1 (cambiar según corresponda)
+
+docker ps
+docker exet -it <CONTAINER ID> cat /usr/share/nginx/html/file/info.txt
+docker exec -it 4 /bin/bash (entra a un equipo, Ctrl + D para salir)
+
+
+docker push lbricchi/pagina-pirulin -a (cambiar según corresponda)
+
+docker stop <CONTAINER ID>
+
+
+
+ip a (no sé qué muestra)
+ip a show <algo> (muestra uno solo)
+
+
+
+
+ANSIBLE:
+vim ansible/.../main.yml (para
+[testing]
+<ip>
+<agregar_ACA_nombre> (pc-pirulin en este caso)
+
+
+ansible-doc (man de ansible)
+ansible-playbook -i inventory/hosts playbook.yml -l pc-pirulin (cambiar según corresponda)
+
+
+
+Crear un rol:
+ansible-galaxy --help
+ansible-galaxy role --help
+ansible-galaxy role init --help
+ansible-galaxy role init roles/pepito (por ejemplo)
+
+añadir al playbook:
+include_role:
+	name: pepito
+
+
+
+mv roles/pepito /tmp/ (para mover el rol a /tmp/)
+ansible-playbook -i inventory/hosts playbook.yml -l pc-pirulin (cambiar según corresponda)
+
+
+Resumen de Ansible:
+Cómo crear un rol y cómo llamarlo
+
+
+
+check_URL.sh <directorio/nombre_archivo.txt> (como que lo toma por parámetro)
+

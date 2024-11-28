@@ -30,20 +30,37 @@ def bubble_sort(vector: list, orientacion='ASC') -> list:
     
     return vector
 
-def selection_sort(vector: list) -> list:
-    for i in range(len(vector)):
-        minimo = vector[i]
-        posicion_minimo = i
-        for j in range(i + 1, len(vector)):
-            if vector[j] < minimo:
-                minimo = vector[j]
-                posicion_minimo = j
-        
-        auxiliar = vector[i]
-        vector[i] = minimo
-        vector[posicion_minimo] = auxiliar
+def selection_sort(vector: list, orientacion= 'ASC') -> list:
+    if orientacion == 'ASC':
+        for i in range(len(vector)):
+            minimo = vector[i]
+            posicion_minimo = i
+            for j in range(i + 1, len(vector)):
+                if vector[j] < minimo:
+                    minimo = vector[j]
+                    posicion_minimo = j
+            
+            auxiliar = vector[i]
+            vector[i] = minimo
+            vector[posicion_minimo] = auxiliar
+    else:
+        for i in range(len(vector)):
+            maximo = vector[i]
+            posicion_maximo = i
+            for j in range(i + 1, len(vector)):
+                if vector[j] > maximo:
+                    maximo = vector[j]
+                    posicion_maximo = j
+            
+            auxiliar = vector[i]
+            vector[i] = maximo
+            vector[posicion_maximo] = auxiliar
     
     return vector
+
+# Test
+lista = [3, 2, 58, 4, 1]
+print(selection_sort(lista, 'DES'))
 
 def quick_sort(vector):
     if len(vector) <= 1: # 0 o 1
